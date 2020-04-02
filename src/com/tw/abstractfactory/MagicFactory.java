@@ -1,0 +1,18 @@
+package com.tw.abstractfactory;
+
+public class MagicFactory extends Abstractfactory {
+    @Override
+    Food createFood() {
+        return new MushRoom();
+    }
+
+    @Override
+    Vehicle createVehicle() {
+        return new Broom();
+    }
+
+    @Override
+    Weapon createWeapon() {
+        return new MagicStick();
+    }
+}
